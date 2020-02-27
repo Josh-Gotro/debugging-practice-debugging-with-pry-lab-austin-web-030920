@@ -1,4 +1,6 @@
 
+## If truly looking for accuracy, please note Leonaro leads and Donatello does machines...
+
 def turtles
     [
       {name: "Donatello", weapon: "bo-staff", traits: ["serious", "leader"]},
@@ -10,8 +12,11 @@ end
 
 def turtle_traits(turtles)
   turtles.map do |turtle|
-    turtle[:traits].each do |trait|
-      trait
+    turtle[:traits].each do |trait1, trait2|
+      binding.pry
+      # trait #=> "serious"
+      trait1
+      trait2
     end
   end
 end
